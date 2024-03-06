@@ -9,10 +9,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Retrieve the OpenAI API key from environment variables
-openai_api_key = os.getenv("openai_api_key")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 # Set the OpenAI API key
-openai.api_key = openai_api_key
+openai.api_key = OPENAI_API_KEY
 
 # Function to generate image
 def generate_image(image_description):
